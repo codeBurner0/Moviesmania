@@ -1,6 +1,6 @@
 {
-    "name": "project_movie",
-    "short_name": "project_movie",
+    "name": "first_movie",
+    "short_name": "first_movie",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
