@@ -87,10 +87,19 @@ class BackdropAndRating extends StatelessWidget {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        SvgPicture.asset("assets/icons/star.svg"),
+                        // SvgPicture.asset("assets/icons/star.svg"),
+                        Icon(
+                          Icons.favorite_outline_rounded,
+                          color: Colors.red,
+                          size: 35,
+                        ),
                         SizedBox(height: kDefaultPadding / 4),
-                        Text("Rate This",
-                            style: Theme.of(context).textTheme.bodyText2),
+                        Text(
+                          'Favourite',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        )
+                        // Text("Favourite",
+                        //     style: Theme.of(context).textTheme.bodyText2),
                       ],
                     ),
                     // Metascore
