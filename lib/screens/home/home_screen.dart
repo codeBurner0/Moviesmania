@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/all.dart';
 // import 'package:flutter_riverpod/all.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:movie_app/constants.dart';
+import 'package:movie_app/pages/infopage.dart';
 import 'package:movie_app/puranaMain.dart';
 import 'package:movie_app/screens/home/components/body.dart';
 import '../../components/main.dart';
@@ -16,6 +17,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  int c = 1234;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,8 +70,21 @@ class _HomeScreenState extends State<HomeScreen> {
       actions: <Widget>[
         IconButton(
           padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-          icon: SvgPicture.asset("assets/icons/search.svg"),
-          onPressed: () {},
+          // icon: SvgPicture.asset("assets/icons/search.svg"),
+          icon: Icon(
+            Icons.info_outline_rounded,
+            color: Colors.black,
+          ),
+          onPressed: () {
+            int k = c;
+            c++;
+
+            print(k++);
+            runApp(MaterialApp(
+              debugShowCheckedModeBanner: false,
+              home: InfoPage(),
+            ));
+          },
         ),
       ],
     );

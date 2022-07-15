@@ -1,6 +1,7 @@
 //@dart=2.9
 //Packages
 import 'dart:convert';
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get_it/get_it.dart';
@@ -50,50 +51,28 @@ class _SplashPageState extends State<SplashPage> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-          brightness: Brightness.dark, primaryColor: Color(0xFF000000)),
-
+          brightness: Brightness.dark,
+          primaryColor: Color.fromARGB(255, 0, 106, 255)),
       debugShowCheckedModeBanner: false,
       title: "moviesmania",
       // theme: ThemeData(primarySwatch: Colors.blue),
-      home: Scaffold(
-        body: Center(
-          child: Container(
-              height: 1000,
-              color: Colors.white,
-              child: Image(
-                image: AssetImage("assets/images/astronot.gif"),
-              )
-              // decoration: BoxDecoration(
-              //   borderRadius: BorderRadius.circular(10.0),
-              //   image: DecorationImage(
-              //     image: AssetImage("assets/images/astronot.gif"),
-              //     fit: BoxFit.cover,
-              //   ),
-              // ),
-              // child: Image(
-              //   image:DecorationImage()
-              // //  image: AssetImage("assets/images/unnamed.png"),
-              // image: NetworkImage('https://i.pinimg.com/originals/43/3d/83/433d83f7e481f35245f8c6bb7c7591d8.gif',),
-              //   height: 500,
-              // ),
-              // ),
-
-              // Avoid this thing
-              // I have changed the splash screen
-              // don't worry , it works as similar as the instuctor screen
-              // Container(
-              //   height: 200,
-              //   width: 200,
-              //   child: Text("Never Give Up"),
-
-              //   // decoration: BoxDecoration(
-
-              //   //   // image: DecorationImage(
-              //   //   //   fit: BoxFit.contain,
-              //   //   //   image: AssetImage('assets/images/screen.png'),
-              //   //   // ),
-              //   // ),
+      home: SafeArea(
+        child: Scaffold(
+          body: Center(
+            child: Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  // borderRadius: BorderRadius.circular(30.0),
+                  // border: style,
+                  image: DecorationImage(
+                    image: AssetImage("assets/images/astronot.gif"),
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ),
+            ),
+          ),
         ),
       ),
     );

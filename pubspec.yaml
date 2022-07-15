@@ -70,6 +70,14 @@ flutter:
       fonts:
         # - asset: assets/Limited Edition Italic.otf
         - asset: assets/FIRESTARTER.TTF
+    - family: italicfont
+      fonts:
+        - asset: assets/Limited Edition Italic.otf
+    
+    - family: newspaper
+      fonts:
+        - asset: assets/OldNewspaperTypes.ttf
+   
         # - asset: assets/Kaldevaderibbon.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic

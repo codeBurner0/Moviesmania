@@ -1,4 +1,4 @@
-#Thu Jul 14 16:18:53 IST 2022
+#Fri Jul 15 12:30:01 IST 2022
 base.0=C\:\\Users\\Ankit Anand\\Desktop\\project_movie\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
