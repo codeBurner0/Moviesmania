@@ -71,7 +71,7 @@ class _LoginPage extends State<LoginPage> {
                 child: CircleAvatar(
                     child: ClipOval(
                   child: Image(
-                    image: AssetImage('assets/images/new_astr_logo.png'),
+                    image: AssetImage('assets/images/videezyLogo.png'),
                   ),
                 )),
               ),

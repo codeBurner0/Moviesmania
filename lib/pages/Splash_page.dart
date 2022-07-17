@@ -56,19 +56,17 @@ class _SplashPageState extends State<SplashPage> {
       debugShowCheckedModeBanner: false,
       title: "moviesmania",
       // theme: ThemeData(primarySwatch: Colors.blue),
-      home: SafeArea(
-        child: Scaffold(
-          body: Center(
-            child: Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Container(
-                decoration: BoxDecoration(
-                  // borderRadius: BorderRadius.circular(30.0),
-                  // border: style,
-                  image: DecorationImage(
-                    image: AssetImage("assets/images/astronot.gif"),
-                    fit: BoxFit.cover,
-                  ),
+      home: Scaffold(
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: Container(
+              decoration: BoxDecoration(
+                // borderRadius: BorderRadius.circular(30.0),
+                // border: style,
+                image: DecorationImage(
+                  image: AssetImage("assets/images/videezy2.gif"),
+                  fit: BoxFit.cover,
                 ),
               ),
             ),

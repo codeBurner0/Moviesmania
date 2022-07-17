@@ -22,7 +22,7 @@ class InfoPage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10.0),
                   // border: style,
                   image: DecorationImage(
-                    image: AssetImage("assets/images/astronot.gif"),
+                    image: AssetImage("assets/images/videezy2.gif"),
                     fit: BoxFit.cover,
                   ),
                 ),

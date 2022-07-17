@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Image.asset(
-                "assets/icons/astroLogo.png",
+                "assets/images/videezyLogo.png",
                 width: 40,
               ),
               Image.asset(
